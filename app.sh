@@ -57,10 +57,10 @@ _build_modules() {
 
 ### COUCHPOTATO ###
 _build_couchpotato() {
-local VERSION="3.0.1"
+local VERSION="master"
 local FOLDER="CouchPotatoServer-build-${VERSION}"
 local FILE="${VERSION}.tar.gz"
-local URL="https://github.com/RuudBurger/CouchPotatoServer/archive/build/${FILE}"
+local URL="https://api.github.com/CouchPotato/CouchPotatoServer/tarball/${VERSION}"
 
 _download_tgz "${FILE}" "${URL}" "${FOLDER}"
 mkdir -p "${DEST}/app"

@@ -57,7 +57,7 @@ _build_modules() {
 
 ### COUCHPOTATO ###
 _build_couchpotato() {
-local VERSION="master"
+local VERSION="b538f9a"
 local FOLDER="CouchPotatoServer-build-${VERSION}"
 local FILE="${VERSION}.tar.gz"
 local URL="https://api.github.com/repos/CouchPotato/CouchPotatoServer/tarball/${VERSION}"

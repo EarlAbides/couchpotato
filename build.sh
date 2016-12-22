@@ -59,19 +59,6 @@ _download_tgz() {
   return 0
 }
 
-# Download a TGZ file and unpack it, removing old files.
-# $1: file
-# $2: url
-# $3: folder
-_download_tgz_curl() {
-  [[ ! -d "download" ]]      && mkdir -p "download"
-  [[ ! -d "target" ]]        && mkdir -p "target"
-  [[ ! -f "download/${1}" ]] && curl -L "${2}" > "download/${1}"
-  [[   -d "target/${3}" ]]   && rm -vfr "target/${3}"
-  [[ ! -d "target/${3}" ]]   && tar -zxvf "download/${1}" -C target
-  return 0
-}
-
 # Download a BZ2 file and unpack it, removing old files.
 # $1: file
 # $2: url

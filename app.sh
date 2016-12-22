@@ -60,9 +60,9 @@ _build_couchpotato() {
 local VERSION="master"
 local FOLDER="CouchPotatoServer-build-${VERSION}"
 local FILE="${VERSION}.tar.gz"
-local URL="https://api.github.com/CouchPotato/CouchPotatoServer/tarball/${VERSION}"
+local URL="https://api.github.com/repos/CouchPotato/CouchPotatoServer/tarball/${VERSION}"
 
-_download_tgz_curl "${FILE}" "${URL}" "${FOLDER}"
+_download_tgz "${FILE}" "${URL}" "${FOLDER}"
 mkdir -p "${DEST}/app"
 cp -vfaR "target/${FOLDER}/"* "${DEST}/app/"
 }

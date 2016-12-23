@@ -13,7 +13,7 @@ Keep in mind that this DroboApp requires [python](https://github.com/droboports/
 
 Easiest way is to use the [droboports/compiler](https://hub.docker.com/r/droboports/compiler/) container from Docker Hub. The
 following command will pull the container, build this repo and leave you with
-sabnzbd.tgz in ~/dist which you can then install on your Drobo.
+couchpotato.tgz in ~/dist which you can then install on your Drobo.
 
 ```
 docker run --rm --volume ~/dist:/dist droboports/compiler build https://github.com/EarlAbides/couchpotato.git
